@@ -1,0 +1,27 @@
+<assembly>
+    <id>package</id>
+    <formats>
+        <format>jar</format>
+    </formats>
+    <fileSets> 
+      <fileSet>
+        <directory>target/classes</directory>
+        <outputDirectory>/</outputDirectory>
+      </fileSet>
+      <fileSet>
+        <directory>src/main/java</directory>
+        <outputDirectory>src</outputDirectory>
+      </fileSet>
+      <fileSet>
+        <directory>config</directory>
+        <outputDirectory>config</outputDirectory>
+      </fileSet>
+    </fileSets>
+    <dependencySets>
+        <dependencySet>
+            <outputDirectory>lib</outputDirectory>
+            <useProjectArtifact>true</useProjectArtifact>
+            <scope>runtime</scope>
+        </dependencySet>
+    </dependencySets>
+</assembly>
